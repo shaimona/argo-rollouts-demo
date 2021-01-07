@@ -6,8 +6,8 @@ spec:
   replicas: 1
   strategy:
     blueGreen:
-      activeService: rollout-bluegreen-active
-      previewService: rollout-bluegreen-preview
+      activeService: rollouts-demo-stable
+      previewService: rollouts-demo-canery
       autoPromotionEnabled: false
   revisionHistoryLimit: 2
   selector:
