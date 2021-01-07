@@ -12,12 +12,12 @@ metadata:
           "TargetGroups":[
             {
                 "Weight":0,
-                "ServiceName":"rollouts-demo-canary",
+                "ServiceName":"rollouts-demo-yellow",
                 "ServicePort":"80"
             },
             {
                 "Weight":100,
-                "ServiceName":"rollouts-demo-stable",
+                "ServiceName":"rollouts-demo-blue",
                 "ServicePort":"80"
             }
           ]
@@ -29,5 +29,5 @@ spec:
         paths:
           - path: /*
             backend:
-              serviceName: rollouts-demo-stable
+              serviceName: rollouts-demo-blue
               servicePort: use-annotation
