@@ -12,7 +12,7 @@ metadata:
           "TargetGroups":[
             {
                 "Weight":0,
-                "ServiceName":"rollouts-demo-yellow",
+                "ServiceName":"rollouts-demo-green",
                 "ServicePort":"80"
             },
             {
