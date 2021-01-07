@@ -7,7 +7,7 @@ spec:
   strategy:
     blueGreen:
       activeService: rollouts-demo-stable
-      previewService: rollouts-demo-canery
+      previewService: rollouts-demo-canary
       autoPromotionEnabled: false
   revisionHistoryLimit: 2
   selector:
