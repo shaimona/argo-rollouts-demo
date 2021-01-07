@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: rollouts-demo-canary
 spec:
-  type: NodePort
+  # type: NodePort
   ports:
   - port: 80
     targetPort: http
@@ -20,7 +20,7 @@ kind: Service
 metadata:
   name: rollouts-demo-stable
 spec:
-  type: NodePort
+  # type: NodePort
   ports:
   - port: 80
     targetPort: http
