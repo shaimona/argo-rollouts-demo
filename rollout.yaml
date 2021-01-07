@@ -5,16 +5,10 @@ metadata:
 spec:
   replicas: 1
   strategy:
-    canary:
-      canaryService: rollouts-demo-canary
-      stableService: rollouts-demo-stable
-      trafficRouting:
-        alb:
-          ingress: rollouts-demo-ingress
-          servicePort: 80
-      steps:
-      - setWeight: 5
-      - pause: {}
+    blueGreen:
+      activeService: rollout-bluegreen-active
+      previewService: rollout-bluegreen-preview
+      autoPromotionEnabled: false
   revisionHistoryLimit: 2
   selector:
     matchLabels:
