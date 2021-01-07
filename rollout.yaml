@@ -16,10 +16,10 @@ spec:
   template:
     metadata:
       labels:
-        app: rollouts-demo
+        app: nginx
     spec:
       containers:
-      - name: rollouts-demo
+      - name: nginx
         image: 349101008628.dkr.ecr.us-west-2.amazonaws.com/nginx:1.0
         resources:
           requests:
