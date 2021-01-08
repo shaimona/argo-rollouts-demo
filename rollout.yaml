@@ -6,8 +6,8 @@ spec:
   replicas: 1
   strategy:
     blueGreen:
-      activeService: rollouts-demo-blue
-      previewService: rollouts-demo-green
+      activeService: rollouts-demo-green
+      previewService: rollouts-demo-yellow
       autoPromotionEnabled: false
   revisionHistoryLimit: 2
   selector:
@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: 349101008628.dkr.ecr.us-west-2.amazonaws.com/nginx:1.1
+        image: 349101008628.dkr.ecr.us-west-2.amazonaws.com/nginx:1.2
         resources:
           requests:
             memory: 32Mi
