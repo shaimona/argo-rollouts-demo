@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: 349101008628.dkr.ecr.us-west-2.amazonaws.com/nginx:1.0
+        image: 349101008628.dkr.ecr.us-west-2.amazonaws.com/nginx:1.1
         resources:
           requests:
             memory: 32Mi
