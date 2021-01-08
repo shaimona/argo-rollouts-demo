@@ -6,8 +6,8 @@ spec:
   replicas: 1
   strategy:
     blueGreen:
-      activeService: rollouts-demo-green
-      previewService: rollouts-demo-yellow
+      activeService: rollouts-demo-blue
+      previewService: rollouts-demo-green
       autoPromotionEnabled: false
   revisionHistoryLimit: 2
   selector:
